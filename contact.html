@@ -3,10 +3,27 @@
     <head>
         <title>Contact</title>
 		<link rel="stylesheet" href="styles.css">
+		<style>
+			.grid {
+				background-color: chocolate;
+				color: lightcyan;
+				display: grid;
+				padding: 20px;
+				grid-column-gap: 20px;
+				grid-row-gap: 10px;
+				grid-template-columns: auto auto auto;
+			}
+			.grid-item {
+				background-color: maroon;
+				font-size: 20px;
+				padding: 20px;
+				text-align: center;
+			}
+		</style>
     </head>
     <body>
 		<!--TODO: Reuse this part for all pages-->
-		<table>
+		<table id="header">
 			<tr>
 				<td>
 					<a href="index.html">Home</a>
@@ -20,10 +37,11 @@
 				<td>
 					<a href="contact.html">Contact</a>
 				</td>
+				<td>
+					<a href="bootstrap.html">Bootstrap</a>
+				</td>
 			</tr>
 		</table>
-		
-        <p>Email: rlcrisostomo06@gmail.com</p>
 		
 		<form>
 			<p>Got something interesting to share?</p>
@@ -33,5 +51,18 @@
 			<br>
 			<button>Submit</button>
 		</form>
+
+		<br>
+		<p>Random stuff</p>
+
+		<div class="grid">
+			<div class="grid-item">1</div>
+			<div class="grid-item">2</div>
+			<div class="grid-item">3</div>
+			<div class="grid-item">4</div>
+			<div class="grid-item">5</div>
+			<div class="grid-item">6</div>
+		</div>
+
     </body>
 </html>

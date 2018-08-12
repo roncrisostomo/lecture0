@@ -1,0 +1,85 @@
+﻿$page-background-color: darkolivegreen;
+$headings-font-family: Arial, sans-serif;
+$body-font-family: sans-serif;
+
+%tableCell {
+	padding: 5px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#header {
+	@extend %tableCell;
+	
+	a {
+		color: darksalmon;
+	}
+
+	a::before {
+		content: "\2605 ";
+	}
+
+	a::after {
+		content: " \25aa";
+	}
+}
+
+body {
+	background-color: $page-background-color;
+}
+h1, h2 {
+	font-family: $headings-font-family;
+	color: skyblue;
+}
+h3, h4 {
+	font-family: $headings-font-family;
+	color: burlywood;
+}
+p {
+	font-family: $body-font-family;
+	font-size: 20px;
+	color: blanchedalmond;
+}
+#intro {
+	width: 90%;
+	margin: 30px;
+	padding: 20px;
+	border: 2px solid black;
+	color: black;
+	text-align: center;
+}
+td::selection {
+	color: saddlebrown;
+	background-color: cornsilk;
+}
+#expTable {
+	width: 70%;
+	border: 2px solid black;
+
+	th {
+		background-color: saddlebrown;
+	}
+
+	th, td {
+		@extend %tableCell;
+		border: 1px solid black;
+		padding: 5px;
+		color: blanchedalmond;
+	}
+}
+
+.tech {
+	font-weight: bold;
+}
+textarea, input[type="text"] {
+	background-color: wheat;
+}
+button:hover {
+	background-color: orange;
+}
+a, ul, ol {
+	color: blanchedalmond;
+}

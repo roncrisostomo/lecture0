@@ -2,11 +2,24 @@
 <html lang="en-US">
     <head>
         <title>Ron's Site</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="styles.css">
+		<style>
+			@media (min-width: 501px) {
+				#introtext::before {
+					content: "Welcome to my site!";
+				}
+			}
+			@media (max-width: 500px) {
+				#introtext::before {
+					content: "Welcome!";
+				}
+			}
+		</style>
     </head>
     <body>
 		<!--TODO: Reuse this part for all pages-->
-		<table>
+		<table id="header">
 			<tr>
 				<td>
 					<a href="index.html">Home</a>
@@ -20,16 +33,18 @@
 				<td>
 					<a href="contact.html">Contact</a>
 				</td>
+				<td>
+					<a href="bootstrap.html">Bootstrap</a>
+				</td>
 			</tr>
 		</table>
 		
 		<div id="intro">
-		<h2>Welcome to my site!</h2>
-		
-		<p>
-        This is a website I created for edX course HarvardX CS50W: Web Programming with <span class="tech">Python</span> and <span class="tech">JavaScript</span>
-		</p>
-		
+			<h2 id="introtext"></h2>
+			<p>
+			This is a website I created for edX course HarvardX CS50W: Web Programming with <span class="tech">Python</span> and <span class="tech">JavaScript</span>
+			</p>
 		</div>
+
     </body>
 </html>

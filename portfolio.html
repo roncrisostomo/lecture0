@@ -3,10 +3,21 @@
     <head>
         <title>Portfolio</title>
 		<link rel="stylesheet" href="styles.css">
+		<style>
+			.container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.container img {
+				width: 400px;
+				height: 200px;
+				overflow: hidden;
+			}
+		</style>
     </head>
     <body>
 		<!--TODO: Reuse this part for all pages-->
-		<table>
+		<table id="header">
 			<tr>
 				<td>
 					<a href="index.html">Home</a>
@@ -20,12 +31,17 @@
 				<td>
 					<a href="contact.html">Contact</a>
 				</td>
+				<td>
+					<a href="bootstrap.html">Bootstrap</a>
+				</td>
 			</tr>
 		</table>
-	
-        <img src="images/keepmealive.jpg" width="300">
-		<img src="images/beattherush.jpg" width="300">
-		<img src="images/visitmendocino.png" width="300">
-		<img src="images/aliceinwonderland.png" width="300">
+		
+		<div class="container">
+			<div><img src="images/keepmealive.jpg"></div>
+			<div><img src="images/beattherush.jpg"></div>
+			<div><img src="images/visitmendocino.png"></div>
+			<div><img src="images/aliceinwonderland.png"></div>
+		<div>
     </body>
 </html>

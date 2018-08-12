@@ -1,0 +1,64 @@
+﻿body {
+	background-color: darkolivegreen;
+}
+h1, h2 {
+	font-family: Arial, sans-serif;
+	color: skyblue;
+}
+h3, h4 {
+	font-family: sans-serif;
+	color: burlywood;
+}
+p {
+	font-size: 20px;
+	color: blanchedalmond;
+}
+td::selection {
+	color: saddlebrown;
+	background-color: cornsilk;
+}
+table {
+	border-collapse: collapse;
+}
+#intro {
+	width: 90%;
+	margin: 30px;
+	padding: 20px;
+	border: 2px solid black;
+	color: black;
+	text-align: center;
+}
+#expTable {
+	width: 70%;
+	border: 2px solid black;
+}
+#expTable th {
+	background-color: saddlebrown;
+}
+#expTable th, #expTable td {
+	border: 1px solid black;
+	padding: 5px;
+	color: blanchedalmond;
+	text-align: center;
+}
+.tech {
+	font-weight: bold;
+}
+textarea, input[type="text"] {
+	background-color: wheat;
+}
+button:hover {
+	background-color: orange;
+}
+a, ul, ol {
+	color: blanchedalmond;
+}
+#header a {
+	color: darksalmon;
+}
+#header a::before {
+	content: "\2605 ";
+}
+#header a::after {
+	content: " \25aa";
+}

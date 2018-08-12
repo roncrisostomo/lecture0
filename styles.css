@@ -1,0 +1,41 @@
+﻿body {
+	background-color: darkolivegreen;
+}
+a {
+	color: darksalmon;
+}
+h1, h2 {
+	font-family: Arial, sans-serif;
+	color: skyblue;
+}
+p {
+	font-size: 20px;
+	color: blanchedalmond;
+}
+table {
+	border-collapse: collapse;
+}
+#intro {
+	width: 90%;
+	margin: 30px;
+	padding: 20px;
+	border: 2px solid black;
+	color: black;
+	text-align: center;
+}
+#workExperience {
+	width: 70%;
+	border: 2px solid black;
+}
+#workExperience th {
+	background-color: saddlebrown;
+}
+#workExperience th, #workExperience td {
+	border: 1px solid black;
+	padding: 5px;
+	color: blanchedalmond;
+	text-align: center;
+}
+.tech {
+	font-weight: bold;
+}

@@ -1,9 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>Contact</title>
+		<link rel="stylesheet" href="styles.css">
     </head>
     <body>
+		<!--TODO: Reuse this part for all pages-->
+		<table>
+			<tr>
+				<td>
+					<a href="index.html">Home</a>
+				</td>
+				<td>
+					<a href="about.html">About</a>
+				</td>
+				<td>
+					<a href="portfolio.html">Portfolio</a>
+				</td>
+				<td>
+					<a href="contact.html">Contact</a>
+				</td>
+			</tr>
+		</table>
+		
         <p>Email: rlcrisostomo06@gmail.com</p>
+		
+		<form>
+			<p>Got something interesting to share?</p>
+			<textarea rows="8" cols="40" placeholder="Anything you want" name="message"></textarea>
+			<br>
+			<input type="text" placeholder="Your name" name="name" title="Optional!">
+			<br>
+			<button>Submit</button>
+		</form>
     </body>
 </html>
